@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Dishwasher from './dishwasher'
 
 class App extends Component{
   constructor(props){
@@ -11,7 +12,7 @@ class App extends Component{
         <h2>Milk</h2>
         <h2>Tea</h2>
         <h2>Cleaning</h2>
-        <h2>Dishwasher</h2>
+        <Dishwasher />
       </div>
       )
   }
