@@ -11,11 +11,11 @@ class App extends Component{
 
   render(){
     return(
-      <div>
-        <Fridge />
-        <TimeTable />
-        <Dishwasher />
-        <HotWaterQueue />
+      <div className="whole">
+        <Fridge className="quarter" />
+        <TimeTable className="quarter" />
+        <Dishwasher className="quarter" />
+        <HotWaterQueue className="quarter" />
       </div>
       )
   }

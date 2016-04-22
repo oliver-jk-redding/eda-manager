@@ -35,7 +35,7 @@ class HotWaterQueue extends Component {
 
     render() {
         return(
-            <div>
+            <div className="quarter">
                 <h1>Hot Water Queue</h1>
                 <div>
                   <input ref="newCupOwner" type="text" placeholder="Enter your name"/>
@@ -52,7 +52,3 @@ class HotWaterQueue extends Component {
 
 
 export default HotWaterQueue
-
-
-
-

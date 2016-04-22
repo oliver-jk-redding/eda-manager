@@ -8,7 +8,7 @@ class Fridge extends Component {
 
     render() {
         return(
-            <div className='fridge'>
+            <div className='fridge quarter'>
                 <div className='fridgeTitle'>{this.props.name}</div>
                 <BottleButtons type='Milk' />
                 <BottleButtons type='Soy' />

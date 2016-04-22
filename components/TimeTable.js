@@ -34,7 +34,7 @@ class TimeTable extends Component {
 
     render(){
         return (
-            <div id='wrapper'>
+            <div id='wrapper quarter'>
                 <div>
                     <AddTime callback={this.addClean.bind(this)}/>
                     <div>

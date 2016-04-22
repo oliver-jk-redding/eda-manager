@@ -6,6 +6,12 @@ main {
     height: 400px;
 }
 
+#wrapper quarter {
+    display:inline-block;
+    float: right;
+    background: tomato;
+}
+
 .chart div {
     background-color: seagreen;
     margin-left: 5px;
@@ -18,8 +24,20 @@ main {
   font: 10px sans-serif;
 }
 
+.whole {
+    display: flex;
+    flex-wrap: wrap;
+    height:  100vh;
+    width: 100vw;
+}
+
+.quarter {
+    width: 50vw;
+    height: 50vh;
+}
+
 .Milk {
-    background: url('images/milk.png') no-repeat;
+    background: url('images/milk.png') no-repeat center;
     background-size: contain;
 }
 

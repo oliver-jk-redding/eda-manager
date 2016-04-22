@@ -17,7 +17,7 @@ class Chart extends Component {
             .style("margin-top", "auto")
             .style("width", "20px")
             .style("height", function(d) {
-                return d * 10 + "px";
+                return d * 5 + "px";
             })
             .text(function(d) {
                 return d;
