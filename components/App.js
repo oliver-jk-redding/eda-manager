@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
-import Dishwasher from './dishwasher'
+import Dishwasher from './Dishwasher'
+import Fridge from './Fridge'
+import TimeTable from './TimeTable'
+import HotWaterQueue from './HotWaterQueue'
 
 class App extends Component{
   constructor(props){
@@ -9,10 +12,10 @@ class App extends Component{
   render(){
     return(
       <div>
-        <h2>Milk</h2>
-        <h2>Tea</h2>
-        <h2>Cleaning</h2>
+        <Fridge />
+        <TimeTable />
         <Dishwasher />
+        <HotWaterQueue />
       </div>
       )
   }

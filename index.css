@@ -18,6 +18,11 @@ main {
   font: 10px sans-serif;
 }
 
+.Milk {
+    background: url('images/milk.png') no-repeat;
+    background-size: contain;
+}
+
 .axis path,
 .axis line {
   fill: none;
