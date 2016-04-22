@@ -1,14 +1,18 @@
 import React, {Component} from 'react'
 import AddTime from './AddTime'
+import Chart from './Chart'
 
 class TimeTable extends Component {
     constructor(props){
         super(props)
         this.state= {
             cleans: [
-                    ['April 21', 25],
-                    ['April 22', 28],
-                    ['April 23', 23]
+                ['2016-04-12', 36],
+                ['2016-04-14', 49],
+                ['2016-04-18', 16],
+                ['2016-04-19', 24],
+                ['2016-04-20', 25],
+                ['2016-04-21', 25],
                 ]
         }
     }
@@ -30,20 +34,23 @@ class TimeTable extends Component {
 
     render(){
         return (
-            <div>
-                <AddTime callback={this.addClean.bind(this)}/>
+            <div id='wrapper'>
                 <div>
-                    <div>Date</div>
-                    <div>Time</div>
+                    <AddTime callback={this.addClean.bind(this)}/>
+                    <div>
+                        <div>Date</div>
+                        <div>Time</div>
+                    </div>
+                    {this.state.cleans.map(function(clean){
+                        return(
+                                <div>
+                                    <div>{clean[0]}</div>
+                                    <div>{clean[1]}</div>
+                                </div>
+                            )
+                    })}
                 </div>
-                {this.state.cleans.map(function(clean){
-                    return(
-                            <div>
-                                <div>{clean[0]}</div>
-                                <div>{clean[1]}</div>
-                            </div>
-                        )
-                })}
+                <Chart data = {this.state.cleans}/>
             </div>
         )
     }
