@@ -35,15 +35,19 @@ class HotWaterQueue extends Component {
 
     render() {
         return(
-            <div>
-                <h1>Hot Water Queue</h1>
-                <div>
-                  <input ref="newCupOwner" type="text" placeholder="Enter your name"/>
-                  <button onClick={this.addCup.bind(this)}>Order Tea</button>
+            <div className="hotwater-wrapper">
+                <div className="hotwater-title">Hot Water Queue</div>
+                <div className="hotwater-inputs">
+                  <input className="hotwater-input" ref="newCupOwner" type="text" placeholder="Enter your name"/>
+                  <button className="hotwater-button" onClick={this.addCup.bind(this)}>Order Tea</button>
                 </div>
-                {this.state.cupOwners.map(function(owner, i) {
-                  return <Teacup name={owner} key={i} callback={this.removeCup.bind(this)}/>
-                }.bind(this))}
+                <div className="hotwater-wrapper2">
+                  <div className="teacups-wrapper">
+                    {this.state.cupOwners.map(function(owner, i) {
+                      return <Teacup name={owner} key={i} callback={this.removeCup.bind(this)}/>
+                    }.bind(this))}
+                  </div>
+                  </div>
             </div>
         )
     }
