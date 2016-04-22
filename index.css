@@ -2,6 +2,29 @@ main {
   text-align: center;
 }
 
+.chart {
+    height: 400px;
+}
+
+.chart div {
+    background-color: seagreen;
+    margin-left: 5px;
+    margin-top: auto;
+    color: white;
+    display: inline-block;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
 .drawer {
   background-color: seagreen;
   width: 200px;
