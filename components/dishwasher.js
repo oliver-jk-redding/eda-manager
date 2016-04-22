@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Drawer from './drawer'
 
 class Dishwasher extends Component{
   constructor(props){
@@ -8,7 +9,8 @@ class Dishwasher extends Component{
   render(){
     return(
       <div>
-        <h1>Helllo</h1>
+        <Drawer />
+        <Drawer />
       </div>
       )
   }
