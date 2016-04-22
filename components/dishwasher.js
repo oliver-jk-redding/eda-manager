@@ -9,8 +9,8 @@ class Dishwasher extends Component{
   render(){
     return(
       <div>
-        <Drawer />
-        <Drawer />
+        <Drawer timer='10'/>
+        <Drawer timer='10'/>
       </div>
       )
   }

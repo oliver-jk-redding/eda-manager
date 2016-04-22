@@ -1,3 +1,19 @@
 main {
   text-align: center;
 }
+
+.drawer {
+  background-color: seagreen;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.true {
+  background-color: tomato;
+}
+
+.false {
+  background-color: bisque;
+}
