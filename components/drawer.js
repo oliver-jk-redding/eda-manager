@@ -42,9 +42,9 @@ class Drawer extends Component{
 
   render(){
     return(
-      <div className="drawer clean">
+      <div className={this.state.clean + ' drawer'}>
         <button className='toggleOn' onClick={this.turnOn.bind(this)}>On</button>
-        <button className={this.state.clean} onClick={this.putAwayDishes.bind(this)}>Empty</button>
+        <button className={' toggle'} onClick={this.putAwayDishes.bind(this)}>Empty</button>
         <div>{this.state.timeLeft}</div>
       </div>
       )
